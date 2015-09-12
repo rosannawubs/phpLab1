@@ -12,6 +12,8 @@ and open the template in the editor.
     <body>
         <?php
             include('student.php');
+            
+            // create an array of students
             $students = array();
 
             // add a first student
@@ -47,7 +49,7 @@ and open the template in the editor.
             $third->add_grade(100);
             $students['a000'] = $third;
 
-            // sort the students in the array
+            // sort the students in the array via id
             ksort($students);
             
             // display students
